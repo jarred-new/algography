@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="jpegen/jpegen.vcxproj">
+    <BuildType Solution="Debug|x64" Project="Release" />
+    <Platform Solution="Debug|x64" Project="Win32" />
+  </Project>
+</Solution>
