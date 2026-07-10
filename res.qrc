@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/mainicon">
+        <file>algography.ico</file>
+    </qresource>
+    <qresource prefix="/rgb_orb">
+        <file>greenorb.png</file>
+        <file>redorb.png</file>
+        <file>blueorb.png</file>
+    </qresource>
+    <qresource prefix="/menu_ico">
+        <file>edit.ico</file>
+        <file>new.ico</file>
+        <file>open.ico</file>
+        <file>save.ico</file>
+        <file>generate.ico</file>
+        <file>demo.ico</file>
+    </qresource>
+</RCC>

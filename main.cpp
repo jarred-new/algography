@@ -1,0 +1,37 @@
+#include "mainwindow.h"
+#include "getstarteddlg.h"
+#include <QApplication>
+#include <QStyleFactory>
+#include <QPalette>
+#include <QColor>
+
+//#include <QDebug>
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+
+    //qDebug() << QStyleFactory::keys();
+
+    QPalette pal = a.palette();
+
+    pal.setColor(QPalette::Window, QColor(255, 243, 212));
+    pal.setColor(QPalette::WindowText, Qt::black);
+    pal.setColor(QPalette::Base, QColor(240, 226, 192));
+    pal.setColor(QPalette::Text, Qt::black);
+    pal.setColor(QPalette::Button, QColor(210, 180, 140));
+    pal.setColor(QPalette::ButtonText, Qt::black);
+    pal.setColor(QPalette::Highlight, QColor(240, 182, 38));
+    pal.setColor(QPalette::HighlightedText, Qt::black);
+
+    a.setStyle(QStyleFactory::create("windowsxp"));
+    a.setPalette(pal);
+
+    MainWindow w;
+    GetStartedDlg *gs = new GetStartedDlg(nullptr);
+
+    w.show();
+    gs->exec();
+
+    return a.exec();
+}
