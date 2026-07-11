@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsDialog</class>
+ <widget class="QDialog" name="SettingsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>220</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tabAppearance">
+    <attribute name="title">
+     <string>Appearance</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBoxTheme">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>361</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Syntax Highlighter</string>
+     </property>
+     <widget class="QLabel" name="labelVariable">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>46</y>
+        <width>80</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Variable</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonVariableColor">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>42</y>
+        <width>80</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choose...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelNumber">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>80</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Number</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonNumberColor">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>66</y>
+        <width>80</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choose...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelComment">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>94</y>
+        <width>80</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Comment</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonCommentColor">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>90</y>
+        <width>80</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choose...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelFunction">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>46</y>
+        <width>80</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Function</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonFunctionColor">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>42</y>
+        <width>60</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choose...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelParentheses">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>70</y>
+        <width>80</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Parentheses</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonParenthesesColor">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>66</y>
+        <width>60</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choose...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelOperator">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>94</y>
+        <width>80</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Operator</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonOperatorColor">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>90</y>
+        <width>60</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choose...</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabEditor">
+    <attribute name="title">
+     <string>Editor</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBoxEditor">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>361</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Editor Options</string>
+     </property>
+     <widget class="QCheckBox" name="checkBoxAutocomplete">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>201</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enable auto-completion</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxShowWhitespace">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>55</y>
+        <width>201</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show whitespace characters</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabNotifications">
+    <attribute name="title">
+     <string>Notifications</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBoxNotifications">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>361</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Message Settings</string>
+     </property>
+     <widget class="QCheckBox" name="checkBoxShowMessages">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>301</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show document information on load or creating new</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabReset">
+    <attribute name="title">
+     <string>Reset</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButtonReset">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>50</y>
+       <width>251</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: red;
+font-size: 24px;</string>
+     </property>
+     <property name="text">
+      <string>Reset to defaults</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>260</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+   <property name="centerButtons">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SettingsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SettingsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

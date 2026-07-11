@@ -7,7 +7,7 @@ GetStartedDlg::GetStartedDlg(QWidget *parent) :
     ui(new Ui::GetStartedDlg)
 {
     ui->setupUi(this);
-    this->setWindowFlags(Qt::CustomizeWindowHint | Qt::WindowTitleHint);
+//    this->setWindowFlags(Qt::CustomizeWindowHint | Qt::WindowTitleHint);
     connect(ui->pushButton_5, &QPushButton::clicked, this, &GetStartedDlg::close);
 
     QFile *detector = new QFile(QCoreApplication::applicationDirPath() + "/jpegen/jpegen.exe");

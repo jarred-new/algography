@@ -15,15 +15,22 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     getstarteddlg.cpp \
-    newdialog.cpp
+    newdialog.cpp \
+    algohighlighter.cpp \
+    completereventfilter.cpp \
+    settingsdialog.cpp
 
 HEADERS  += mainwindow.h \
     getstarteddlg.h \
-    newdialog.h
+    newdialog.h \
+    algohighlighter.h \
+    completereventfilter.h \
+    settingsdialog.h
 
 FORMS    += mainwindow.ui \
     getstarteddlg.ui \
-    newdialog.ui
+    newdialog.ui \
+    settingsdialog.ui
 
 RESOURCES += \
     res.qrc

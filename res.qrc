@@ -9,10 +9,17 @@
     </qresource>
     <qresource prefix="/menu_ico">
         <file>edit.ico</file>
-        <file>new.ico</file>
         <file>open.ico</file>
         <file>save.ico</file>
         <file>generate.ico</file>
         <file>demo.ico</file>
+        <file>copy.ico</file>
+        <file>cut.ico</file>
+        <file>jpegpath.ico</file>
+        <file>paste.ico</file>
+        <file>clearconsole.ico</file>
+        <file>getstarted.ico</file>
+        <file>settings.ico</file>
+        <file>new.ico</file>
     </qresource>
 </RCC>

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>393</width>
-    <height>205</height>
+    <height>259</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -62,13 +62,13 @@
         <item>
          <widget class="QSpinBox" name="spinWidth">
           <property name="whatsThis">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Width Value:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Minimum: 16px&lt;/p&gt;&lt;p&gt;Maximum: 4000px&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Width Value:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Minimum: 16px&lt;/p&gt;&lt;p&gt;Maximum: 10,000px&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="minimum">
            <number>16</number>
           </property>
           <property name="maximum">
-           <number>4000</number>
+           <number>10000</number>
           </property>
          </widget>
         </item>
@@ -88,13 +88,13 @@
         <item>
          <widget class="QSpinBox" name="spinHeight">
           <property name="whatsThis">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Height Value:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Minimum: 16px&lt;/p&gt;&lt;p&gt;Maximum: 4000px&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Height Value:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Minimum: 16px&lt;/p&gt;&lt;p&gt;Maximum: 10,000px&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="minimum">
            <number>16</number>
           </property>
           <property name="maximum">
-           <number>4000</number>
+           <number>10000</number>
           </property>
          </widget>
         </item>
@@ -138,7 +138,7 @@
      <item>
       <widget class="QSlider" name="qualitySlider">
        <property name="whatsThis">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;JPEG Quality:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Change the quality of your JPEG from 5 to 100. Default value is 90.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;JPEG Quality:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Change the quality of your JPEG from 5 to 100. Default value is 90.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="minimum">
         <number>5</number>
@@ -164,7 +164,10 @@
      <item>
       <widget class="QLineEdit" name="lineEdit">
        <property name="whatsThis">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;JPEG / File name:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Leaving this text empty will be named as &amp;quot;untitled&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;JPEG / File name:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Leaving this text empty will be named as &amp;quot;untitled&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>untitled</string>
        </property>
       </widget>
      </item>
