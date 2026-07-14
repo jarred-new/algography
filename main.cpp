@@ -32,12 +32,17 @@ int main(int argc, char *argv[])
 
     MainWindow w;
     //GetStartedDlg *gs = new GetStartedDlg(nullptr);
-    if (argc > 1) {
-        QString argFile = argv[1];
-        w.open_doc_from_path(argFile);
+
+    QString splashPath = "";
+    QFile checkSplashExist("./algography_splash.png");
+    if (checkSplashExist.exists()) {
+        splashPath = "./algography_splash.png";
+    }
+    else {
+        splashPath = ":/splash/algography_splash.png";
     }
 
-    QPixmap splashImage("./algography_splash.png");
+    QPixmap splashImage(splashPath);
     if (splashImage.isNull()) {
         splashImage = QPixmap(480, 480);
         splashImage.fill(Qt::white);
@@ -53,12 +58,19 @@ int main(int argc, char *argv[])
     QTimer::singleShot(1000, [&]() {
         splash.finish(&w);
         w.show();
-
         if (argc > 1) {
-            w.open_doc_from_path(QString::fromLocal8Bit(argv[1]));
+            QString argFile = argv[1];
+            w.open_doc_from_path(argFile);
+        }
+        else {
+            w.getStarted_dlg();
         }
 
-        w.getStarted_dlg();
+//        if (argc > 1) {
+//            w.open_doc_from_path(QString::fromLocal8Bit(argv[1]));
+//        }
+
+
     });
 
     return a.exec();

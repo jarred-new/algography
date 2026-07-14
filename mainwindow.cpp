@@ -289,7 +289,7 @@ void MainWindow::open_doc_from_path(QString path)
     if (instance)
     {
         QMetaObject::invokeMethod(instance,
-                                  "getStarted_dlg_slot",
+                                  "open_doc_from_path_slot",
                                   Qt::QueuedConnection,
                                   Q_ARG(QString, path));
     }
@@ -383,6 +383,14 @@ void MainWindow::newDocument_slot()
     {
         return;
     }
+
+    // Clear the current document state
+    ui->redValue->clear();
+    ui->greenValue->clear();
+    ui->blueValue->clear();
+    ui->textBrowser->clear();
+    //ui->label->clear();
+    ui->label->setPixmap(QPixmap());
 
     NewDialog newdlg(this);
 
@@ -654,6 +662,14 @@ void MainWindow::openDocument_slot()
     {
         return;
     }
+
+    // Clear the current document state
+    ui->redValue->clear();
+    ui->greenValue->clear();
+    ui->blueValue->clear();
+    ui->textBrowser->clear();
+    //ui->label->clear();
+    ui->label->setPixmap(QPixmap());
 
     QString openPath = QFileDialog::getOpenFileName(this,
                                                     "Open Document",

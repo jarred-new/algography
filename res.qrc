@@ -22,4 +22,7 @@
         <file>settings.ico</file>
         <file>new.ico</file>
     </qresource>
+    <qresource prefix="/splash">
+        <file>algography_splash.png</file>
+    </qresource>
 </RCC>
